@@ -8,10 +8,18 @@
 <body>
     <form action="/groups/{{ $group_id }}/students" method="post">
         @csrf
-        <input type="text" name="name" />
-        <input type="text" name="surname" />
+        <div>
+            <label for="input-name">Name:</label>
+            <input type="text" name="name" id="input-name" />
+        </div>
+        <div>
+            <label for="input-surname">Surname:</label>
+            <input type="text" name="surname" id="input-surname" />
+        </div>
         <input type="hidden" name="group_id" value="{{ $group_id }}">
-        <input type="submit" value="Create"  />
+        <div>
+            <input type="submit" value="Create" />
+        </div>
     </form>
 </body>
 </html>

@@ -8,7 +8,8 @@
 <body>
     <form action="/groups" method="post">
         @csrf
-        <input type="text" name="title" />
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title"/>
         <input type="submit" value="Create"  />
     </form>
 </body>
